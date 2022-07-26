@@ -20,6 +20,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         <form action="<?php $cadUsuario->inserir(); ?>" method="POST">
             <input type="text" name="nome" placeholder="Nome aqui...">
             <br/><br/>
+            <select name="perfilAcesso">
+                <option value="">Selecione...</option>
+                <option value="admin">Administrador</option>
+                <option value="user">Usuário</option>
+            </select>
+            <br/><br/>
             <input type="text" name="usuario" placeholder="User aqui...">
             <br/><br/>
             <input type="password" name="senha" minlength="8" 
